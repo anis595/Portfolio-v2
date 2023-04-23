@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -17,18 +18,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="/public/custom.css" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body class="">
-    <nav class="bg-black font-roboto text-2xl font-black sticky top-0">
+    <nav class="bg-black font-roboto text-2xl font-black sticky top-0 z-50">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
       >
         <a href="#" class="flex items-center">
           <p
-            class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white hover:animate-bounce"
+            class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white animate-bounce"
           >
             ・アニス・
           </p>
@@ -71,22 +74,53 @@
         </div>
       </div>
     </nav>
-
-    <div class="curtain relative">
-      <div class="text-5xl invert tracking-widest uppercase">
-        <p class="font-roboto">
-          <span> “</span><span>La</span>
-          <span class="font-bold">persévérance</span> <span>est</span>
-          <span>la</span> <span>noblesse </span> <span>de</span>
-          <span>l'obstination.</span> <span> ”</span>
+    <section>
+      <div class="curtain relative">
+        <div class="text-5xl invert tracking-widest uppercase">
+          <p class="font-roboto relative top-[-80px]">
+            <span> “</span><span>La</span>
+            <span class="font-bold">persévérance</span> <span>est</span>
+            <span>la</span> <span>noblesse </span> <span>de</span>
+            <span>l'obstination.</span> <span> ”</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="fond pt-20">
+      <div class="mx-auto container">
+        <div class="flex justify-center text-5xl uppercase pb-20">
+          <h2
+            
+            class="border-r-2 border-l-2 border-white px-4"
+          >
+            présentation
+          </h2>
+        </div>
+        <p class="text-white font-roboto text-xl">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
+          sapiente magni laborum accusantium at aperiam ratione aliquam, tenetur
+          facere eius cumque quam iste commodi cum dolorem doloremque earum?
+          Veniam, porro. Eligendi voluptates cumque minus. Cupiditate accusamus
+          libero officia, est unde laboriosam voluptatem dolorem, vitae
+          inventore pariatur illo ipsa iste doloremque incidunt asperiores fuga
+          maiores! Nostrum culpa consectetur cupiditate eligendi ea! Amet, nam
+          tempore assumenda tempora neque excepturi consectetur error commodi
+          velit fuga omnis. Ab quo esse illo alias sed eius quae. Voluptate,
+          alias recusandae consequuntur beatae nulla consectetur aliquam
+          necessitatibus. Dolore adipisci molestias maiores, sapiente
+          praesentium ratione quasi est voluptatem, explicabo fuga labore
+          repellat tenetur laudantium magnam officia perspiciatis, architecto
+          commodi corporis optio autem veniam doloremque id! Hic, voluptatum
+          eius? Recusandae tempore cum totam tempora modi quidem! Quibusdam,
+          corrupti cum. Molestias doloremque hic rerum totam similique quod
+          suscipit facere deleniti dignissimos consequuntur? Officiis, saepe
+          neque quae explicabo doloremque consequatur at?
         </p>
       </div>
-      <i class="fa-dark fa-arrow-down-to-arc fa-5xl absolute text-white"></i>
-
-      <div class="text-black font-roboto text-xl">
-        <h2>zefzfeze</h2>
-      </div>
-    </div>
-    <div>lorem*200</div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
