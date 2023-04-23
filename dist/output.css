@@ -651,6 +651,14 @@ video {
   border-radius: 0.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
 }
@@ -693,6 +701,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-96 {
+  padding-bottom: 24rem;
 }
 
 .font-roboto {
