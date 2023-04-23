@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
-  <body class="">
+  <body class="overscroll-contain">
     <nav class="bg-black font-roboto text-2xl font-black sticky top-0 z-50">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"
+        class="max-w-screen-xl flex items-center justify-between mx-auto md:flex"
       >
         <a href="#" class="flex items-center">
           <p
@@ -44,7 +44,7 @@
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-white rounded button type3"
+                class="block py-2 pl-3 pr-4 text-white rounded button type3 whitespace-nowrap"
                 aria-current="page"
                 >Qui suis-je?</a
               >
@@ -76,13 +76,18 @@
     </nav>
     <section>
       <div class="curtain relative">
-        <div class="text-5xl invert tracking-widest uppercase">
+        <div class="text-6xl invert tracking-widest uppercase">
           <p class="font-roboto relative top-[-80px] border-white border-2">
             <span> “</span><span>La</span>
             <span class="font-bold">persévérance</span> <span>est</span>
             <span>la</span> <span>noblesse </span> <span>de</span>
             <span>l'obstination.</span> <span> ”</span>
           </p>
+          <img
+            class="h-[40rem] absolute top-[85px] opacity-5"
+            src="/public/24156.svg"
+            alt=""
+          />
         </div>
       </div>
     </section>
