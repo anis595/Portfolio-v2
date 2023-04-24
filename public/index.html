@@ -10,64 +10,53 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="bg-black font-roboto sticky top-0 z-50">
+    <nav class="nav-bar fixed z-50 h-20 w-full bg-black font-roboto pt-4">
       <div
-        class="max-w-screen-xl flex items-center justify-between mx-auto tablet:flex tablet:items-center tablet:justify-between"
+        class="container tablet:flex tablet:justify-between tablet:items-center"
       >
-        <a href="#" class="flex items-center">
-          <p
-            class="self-center text-4xl whitespace-nowrap dark:text-white animate-bounce font-black"
+        <div class="flex justify-between items-center">
+          <span
+            class="cursor-pointer text-white text-5xl whitespace-nowrap font-black mx-auto phone:text-3xl tablet:text-5xl"
           >
-            ・アニス・
-          </p>
-        </a>
-
-        <div class="hidden w-full md:block md:w-auto">
-          <ul
-            class="flex flex-col mt-4 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 items-center uppercase font-medium text-lg"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white rounded button type3 whitespace-nowrap"
-                aria-current="page"
-                >Qui suis-je?</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 rounded button type3 text-white"
-                >Parcours</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 rounded button type3 text-white"
-                >Stack</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-white rounded button type3"
-                >Contact</a
-              >
-            </li>
-          </ul>
+            <p>・アニス・</p>
+          </span>
+          <span class="mobile-menu-button block cursor-pointer tablet:hidden">
+            <img src="/public/menu-hamburger.svg" alt="icon burger" />
+          </span>
         </div>
+
+        <ul
+          class="uppercase bg-opacity-80 text-center mobile-menu wrapper-slide -mx-4 cursor-pointer bg-black text-base font-semibold text-white tablet:flex tablet:items-center tablet:justify-center tablet:bg-transparent tablet:py-0 tablet:pl-0 hidden"
+        >
+          <li
+            class="menu-li relative mx-4 my-6 tablet:my-0 button type3 whitespace-nowrap"
+          >
+            <a href="#section4">Qui suis-je?</a>
+          </li>
+
+          <li class="menu-li relative mx-4 my-6 tablet:my-0 button type3">
+            <a href="#section5">Parcours</a>
+          </li>
+          <li class="menu-li relative mx-4 my-6 tablet:my-0 button type3">
+            <a href="#section7">Stack</a>
+          </li>
+          <li class="menu-li relative mx-4 my-6 tablet:my-0 button type3">
+            <a href="#section8">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <section>
+    <section class="">
       <div class="curtain relative">
-        <div class="text-5xl invert tracking-widest uppercase">
-          <p class="font-roboto relative top-[-80px] text-center">
+        <div
+          class="text-5xl invert tracking-widest uppercase phone:text-3xl tablet:text-5xl"
+        >
+          <p class="font-roboto relative top-[-80px] text-center phone:px-2">
             <span> “</span><span>La</span>
             <span class="font-bold">persévérance</span> <span>est</span>
             <span>la</span> <span>noblesse </span> <span>de</span>
-            <span>l'obstination.</span> <span> ”</span>
+            <span>l'obstination.</span> <span>”</span>
           </p>
           <img
             class="h-[40rem] absolute top-[85px] opacity-10 animated-svg"
@@ -79,40 +68,59 @@
     </section>
 
     <section class="pt-20 bg-black">
-      <div class="mx-auto container">
+      <div class="container">
         <div
           data-aos="zoom-in"
-          data-aos-duration="700"
+          data-aos-duration="1000"
           data-aos-delay="50"
-          class="flex justify-center text-5xl uppercase pb-20"
+          class="flex justify-center tablet:text-5xl uppercase pb-20 phone:text-3xl"
         >
           <h2 class="border-r-2 border-l-2 border-white px-4">Qui suis-je?</h2>
         </div>
-        <p class="text-white font-roboto text-xl pb-96">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis,
-          sapiente magni laborum accusantium at aperiam ratione aliquam, tenetur
-          facere eius cumque quam iste commodi cum dolorem doloremque earum?
-          Veniam, porro. Eligendi voluptates cumque minus. Cupiditate accusamus
-          libero officia, est unde laboriosam voluptatem dolorem, vitae
-          inventore pariatur illo ipsa iste doloremque incidunt asperiores fuga
-          maiores! Nostrum culpa consectetur cupiditate eligendi ea! Amet, nam
-          tempore assumenda tempora neque excepturi consectetur error commodi
-          velit fuga omnis. Ab quo esse illo alias sed eius quae. Voluptate,
-          alias recusandae consequuntur beatae nulla consectetur aliquam
-          necessitatibus. Dolore adipisci molestias maiores, sapiente
-          praesentium ratione quasi est voluptatem, explicabo fuga labore
-          repellat tenetur laudantium magnam officia perspiciatis, architecto
-          commodi corporis optio autem veniam doloremque id! Hic, voluptatum
-          eius? Recusandae tempore cum totam tempora modi quidem! Quibusdam,
-          corrupti cum. Molestias doloremque hic rerum totam similique quod
-          suscipit facere deleniti dignissimos consequuntur? Officiis, saepe
-          neque quae explicabo doloremque consequatur at?
-        </p>
+        <div class="flex-col items-center justify-center">
+          <div class="flex justify-around items-center ">
+            <img data-aos=""
+             class="h-96 phone:hidden md:block opacity-20
+            " src="/public/blob (1).svg" alt="">
+            <img
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="150"
+              class="h-96 saturate-0 mb-10 border-4 border-white"
+              src="/public/IMG-6097.jpg"
+              alt=""
+            />
+            <img class="h-96 phone:hidden md:block opacity-20
+            " src="/public/blob (1).svg" alt="">
+            
+          </div>
+          </div>
+
+          <p
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="phone:text-center md:text-left tablet:leading-10 phone:leading-7 mb-3 text-white first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:mr-3 first-letter:float-left"
+          >
+            Track work across the enterprise through an open, collaborative
+            platform. Link issues across Jira and ingest data from other
+            software development tools, so your IT support and operations teams
+            have richer contextual information to rapidly respond to requests,
+            incidents, and changes.are development tools, so your IT support and
+            operations teams have richer contextual information to rapidly
+            respond to requests, incidents, and changes.are development tools,
+            so your IT support and operations teams have richer contextual
+            information to rapidly respond to requests, incidents, and
+            changes.are development tools, so your IT support and operations
+            teams have richer contextual information to rapidly respond to
+            requests, incidents, and changes.
+          </p>
+        </div>
       </div>
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="/public/index.js"></script>
   </body>
 </html>

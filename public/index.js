@@ -1,6 +1,6 @@
-// let btn1 = document.getElementById('btn1')
-// let menuNav = document.getElementById('menuNav')
-
-// btn1.addEventListener('click' , ()=> {
-//     menuNav.classList.toggle('hidden');
-// })
+const btnMobile = document.querySelector("span.mobile-menu-button");
+const menuMobile = document.querySelector(".mobile-menu");
+btnMobile.addEventListener("click", () => {
+  menuMobile.classList.toggle("hidden");
+  console.log("hello");
+});
