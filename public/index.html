@@ -4,34 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link rel="stylesheet" href="/public/custom.css" />
     <link rel="stylesheet" href="/dist/output.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body class="overscroll-contain">
-    <nav class="bg-black font-roboto text-2xl font-black sticky top-0 z-50">
+  <body>
+    <nav class="bg-black font-roboto sticky top-0 z-50">
       <div
-        class="max-w-screen-xl flex items-center justify-between mx-auto md:flex"
+        class="max-w-screen-xl flex items-center justify-between mx-auto tablet:flex tablet:items-center tablet:justify-between"
       >
         <a href="#" class="flex items-center">
           <p
-            class="self-center text-4xl font-semibold whitespace-nowrap dark:text-white animate-bounce"
+            class="self-center text-4xl whitespace-nowrap dark:text-white animate-bounce font-black"
           >
             ・アニス・
           </p>
@@ -39,7 +24,7 @@
 
         <div class="hidden w-full md:block md:w-auto">
           <ul
-            class="flex flex-col font-medium mt-4 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 items-center uppercase"
+            class="flex flex-col mt-4 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 items-center uppercase font-medium text-lg"
           >
             <li>
               <a
@@ -74,26 +59,33 @@
         </div>
       </div>
     </nav>
+
     <section>
       <div class="curtain relative">
-        <div class="text-6xl invert tracking-widest uppercase">
-          <p class="font-roboto relative top-[-80px] border-white border-2">
+        <div class="text-5xl invert tracking-widest uppercase">
+          <p class="font-roboto relative top-[-80px] text-center">
             <span> “</span><span>La</span>
             <span class="font-bold">persévérance</span> <span>est</span>
             <span>la</span> <span>noblesse </span> <span>de</span>
             <span>l'obstination.</span> <span> ”</span>
           </p>
           <img
-            class="h-[40rem] absolute top-[85px] opacity-5"
+            class="h-[40rem] absolute top-[85px] opacity-10 animated-svg"
             src="/public/24156.svg"
             alt=""
           />
         </div>
       </div>
     </section>
+
     <section class="pt-20 bg-black">
       <div class="mx-auto container">
-        <div class="flex justify-center text-5xl uppercase pb-20">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="700"
+          data-aos-delay="50"
+          class="flex justify-center text-5xl uppercase pb-20"
+        >
           <h2 class="border-r-2 border-l-2 border-white px-4">Qui suis-je?</h2>
         </div>
         <p class="text-white font-roboto text-xl pb-96">
@@ -118,7 +110,7 @@
         </p>
       </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>

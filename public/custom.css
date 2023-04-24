@@ -1,5 +1,5 @@
 :root {
-  --minh: 100vh;
+  --minh: 92vh;
   --color1: rgb(255, 255, 255);
   --color2: rgb(0, 0, 0);
 }
@@ -47,7 +47,7 @@ h2 {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  font-size: 18px;
+  /* font-size: 15px; */
   margin: 1em 0.8em;
 }
 .button.type3 {
@@ -90,9 +90,9 @@ h2 {
   height: 100%;
 }
 
-li {
-  font-weight: 800;
-}
+/* li {
+  font-weight: ;
+} */
 
 h2 {
   font-family: "roboto";
@@ -189,5 +189,20 @@ span:nth-child(18) {
   100% {
     opacity: 1;
     filter: blur(0);
+  }
+}
+
+.animated-svg {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  animation-delay: -2s;
+  animation-duration: 5s;
+}
+@keyframes move-forever {
+  0%,
+  100% {
+    transform: translate3d(0, 0px, 0);
+  }
+  50% {
+    transform: translate3d(0, 8px, 0);
   }
 }
